@@ -32,7 +32,9 @@ function submitForm() {
     const prefix = document.querySelector("#prefix").value
     const lang = document.querySelector("#lang").value
 
-    fetch(`${host}/init?searchTerm=${searchTerm}&prefix=${prefix}&lang=${lang}`)
+    fetch(`${host}/init?searchTerm=${searchTerm}&prefix=${prefix}&lang=${lang}`,{
+        mode:"cors"
+    })
     .then((response) => {
         return response.json()
     })
