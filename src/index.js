@@ -20,6 +20,10 @@ setInterval(() => {
 
 }, 500)
 
+function Reload() {
+    location.reload()
+}
+
 function submitForm() {
     document.querySelector("#container").style.display = "none"
     document.querySelector("#loading").style.display = "block"
